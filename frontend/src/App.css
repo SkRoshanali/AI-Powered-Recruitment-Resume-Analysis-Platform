@@ -1,0 +1,40 @@
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.badge {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.job-card {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.match-score {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.ats-score {
+  font-size: 1.2rem;
+  color: #007bff;
+}
