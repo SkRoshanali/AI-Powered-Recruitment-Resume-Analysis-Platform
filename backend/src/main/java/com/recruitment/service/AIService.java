@@ -5,6 +5,7 @@ import com.recruitment.entity.Job;
 import com.recruitment.entity.JobSeekerProfile;
 import com.recruitment.repository.JobRepository;
 import lombok.RequiredArgsConstructor;
+import org.apache.pdfbox.Loader;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.springframework.beans.factory.annotation.Value;
@@ -27,7 +28,7 @@ public class AIService {
     private final JobRepository jobRepository;
     
     public String extractTextFromPDF(MultipartFile file) throws IOException {
-        try (PDDocument document = PDDocument.load(file.getInputStream())) {
+        try (PDDocument document = Loader.loadPDF(file.getInputStream())) {
             PDFTextStripper stripper = new PDFTextStripper();
             return stripper.getText(document);
         }

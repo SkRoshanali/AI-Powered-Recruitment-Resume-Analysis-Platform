@@ -1,0 +1,14 @@
+com\recruitment\entity\User.class
+com\recruitment\entity\Application$ApplicationStatus.class
+com\recruitment\entity\JobSeekerProfile.class
+com\recruitment\entity\Job.class
+com\recruitment\entity\Certification.class
+com\recruitment\entity\Job$ExperienceLevel.class
+com\recruitment\entity\Job$JobStatus.class
+com\recruitment\entity\Experience.class
+com\recruitment\entity\Skill.class
+com\recruitment\entity\RecruiterProfile.class
+com\recruitment\entity\Education.class
+com\recruitment\entity\User$Role.class
+com\recruitment\entity\Job$JobType.class
+com\recruitment\entity\Application.class
